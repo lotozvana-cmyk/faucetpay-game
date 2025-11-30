@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>FaucetPay Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>FaucetPay 1vs1 Game</h1>
+
+    <div class="block">
+        <label>Ваш логін:</label>
+        <input id="username" placeholder="Введіть ім'я">
+    </div>
+
+    <div class="block">
+        <p>Баланс: <span id="balance">0</span> сатоші</p>
+    </div>
+
+    <div class="block">
+        <button onclick="deposit()">Поповнити</button>
+        <button onclick="withdraw()">Вивести</button>
+    </div>
+
+    <hr>
+
+    <h2>Гра 1 на 1</h2>
+
+    <div class="block">
+        <button onclick="findOpponent()">Знайти суперника</button>
+    </div>
+
+    <p id="status"></p>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
